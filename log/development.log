@@ -1,0 +1,133 @@
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-04-02 21:08:11 +0300
+Served asset /rails.png - 200 OK (6ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateUsers (20130402181002)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fb_id" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "city" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130402181002')[0m
+  [1m[35m (1.6ms)[0m  commit transaction
+Migrating to CreateBands (20130402181105)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "bands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fb_id" varchar(255), "name" varchar(255), "genre" varchar(255), "city" varchar(255), "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130402181105')[0m
+  [1m[35m (2.0ms)[0m  commit transaction
+Migrating to CreateConcerts (20130402181359)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "concerts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "city" varchar(255), "date_time" datetime, "location" varchar(255), "description" text, "price" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130402181359')[0m
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-04-02 21:15:24 +0300
+Served asset /rails.png - 304 Not Modified (38ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-04-02 21:15:30 +0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (20.5ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (28.8ms)
+Compiled bands.css  (44ms)  (pid 1827)
+Compiled concerts.css  (3ms)  (pid 1827)
+Compiled scaffolds.css  (24ms)  (pid 1827)
+Compiled users.css  (2ms)  (pid 1827)
+Compiled application.css  (186ms)  (pid 1827)
+Compiled jquery.js  (3ms)  (pid 1827)
+Compiled jquery_ujs.js  (0ms)  (pid 1827)
+Compiled bands.js  (445ms)  (pid 1827)
+Compiled concerts.js  (97ms)  (pid 1827)
+Compiled users.js  (70ms)  (pid 1827)
+Compiled application.js  (777ms)  (pid 1827)
+Completed 200 OK in 1329ms (Views: 1267.3ms | ActiveRecord: 23.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-02 21:15:31 +0300
+Served asset /application.css - 200 OK (19ms)
+
+
+Started GET "/assets/concerts.css?body=1" for 127.0.0.1 at 2013-04-02 21:15:31 +0300
+Served asset /concerts.css - 200 OK (2ms)
+
+
+Started GET "/assets/bands.css?body=1" for 127.0.0.1 at 2013-04-02 21:15:31 +0300
+Served asset /bands.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-02 21:15:31 +0300
+Served asset /scaffolds.css - 200 OK (4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-04-02 21:15:31 +0300
+Served asset /users.css - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-02 21:15:31 +0300
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-02 21:15:31 +0300
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/bands.js?body=1" for 127.0.0.1 at 2013-04-02 21:15:31 +0300
+Served asset /bands.js - 200 OK (3ms)
+
+
+Started GET "/assets/concerts.js?body=1" for 127.0.0.1 at 2013-04-02 21:15:31 +0300
+Served asset /concerts.js - 200 OK (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-02 21:15:31 +0300
+Served asset /users.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-02 21:15:31 +0300
+Served asset /application.js - 200 OK (10ms)
+
+
+Started GET "/concerts" for 127.0.0.1 at 2013-04-02 21:15:39 +0300
+Processing by ConcertsController#index as HTML
+  [1m[35mConcert Load (26.7ms)[0m  SELECT "concerts".* FROM "concerts" 
+  Rendered concerts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 131ms (Views: 99.5ms | ActiveRecord: 27.2ms)
+
+
+Started GET "/concerts/new" for 127.0.0.1 at 2013-04-02 21:15:41 +0300
+Processing by ConcertsController#new as HTML
+  Rendered concerts/_form.html.erb (118.3ms)
+  Rendered concerts/new.html.erb within layouts/application (168.1ms)
+Completed 200 OK in 283ms (Views: 267.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/concerts.css?body=1" for 127.0.0.1 at 2013-04-02 21:15:41 +0300
+Served asset /concerts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/concerts.js?body=1" for 127.0.0.1 at 2013-04-02 21:15:41 +0300
+Served asset /concerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/concerts" for 127.0.0.1 at 2013-04-02 21:15:47 +0300
+Processing by ConcertsController#index as HTML
+  [1m[36mConcert Load (0.2ms)[0m  [1mSELECT "concerts".* FROM "concerts" [0m
+  Rendered concerts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/concerts.js?body=1" for 127.0.0.1 at 2013-04-02 21:15:47 +0300
+Served asset /concerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/concerts.css?body=1" for 127.0.0.1 at 2013-04-02 21:15:47 +0300
+Served asset /concerts.css - 304 Not Modified (0ms)
