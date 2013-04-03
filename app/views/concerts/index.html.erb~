@@ -8,7 +8,7 @@
     <th>Location</th>
     <th>Description</th>
     <th>Price</th>
-    <th>Band id</th>
+    <th></th>
     <th></th>
     <th></th>
   </tr>
@@ -21,7 +21,6 @@
     <td><%= concert.location %></td>
     <td><%= concert.description %></td>
     <td><%= concert.price %></td>
-    <td><%= concert.band_id %></td>
     <td><%= link_to 'Show', concert %></td>
     <td><%= link_to 'Edit', edit_concert_path(concert) %></td>
     <td><%= link_to 'Destroy', concert, method: :delete, data: { confirm: 'Are you sure?' } %></td>
