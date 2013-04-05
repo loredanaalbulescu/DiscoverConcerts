@@ -32,7 +32,10 @@ class BandsController < ApplicationController
   # POST /bands.json
   def create
     @band = Band.new(params[:band])
-    @band.save
+    @same_fb_id = Band.find_by_fb_id(@band.fb_id)
+    if @same_fb_id == nil
+      @band.save
+    end
     respond_with @band
   end
 

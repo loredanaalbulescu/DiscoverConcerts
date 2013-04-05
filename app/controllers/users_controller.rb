@@ -32,7 +32,10 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(params[:user])
-    @user.save
+    @same_fb_id = User.find_by_fb_id(@user.fb_id)
+    if @same_fb_id == nil
+      @user.save
+    end
     respond_with @user
   end
 
