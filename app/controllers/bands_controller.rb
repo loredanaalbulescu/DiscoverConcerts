@@ -11,7 +11,7 @@ class BandsController < ApplicationController
   # GET /bands/1
   # GET /bands/1.json
   def show
-    @band = Band.find(params[:id])
+    @band = Band.find_by_fb_id(params[:id])
     respond_with @band
   end
 
