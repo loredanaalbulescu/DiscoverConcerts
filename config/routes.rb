@@ -1,17 +1,13 @@
 DiscoverConcerts::Application.routes.draw do
+
   resources :participates
-
-
   resources :favorites
-
-
   resources :concerts
-
-
   resources :bands
-
-
   resources :users
+
+  match 'bands/:fb_id/show_by_fb_id', to: 'bands#show_by_fb_id', :via => :get, action: 'show_by_fb_id'
+  match 'bands/:id/genre/:genre', to: 'bands#show_same_genre', :via => :get, action: 'show_same_genre'
 
 
   # The priority is based upon order of creation:
