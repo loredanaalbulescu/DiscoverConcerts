@@ -8,9 +8,10 @@ class BandsController < ApplicationController
 	respond_with @bands
   end
 
-  def show_by_fb_id(options={})
-    @band = Band.find_by_fb_id(options[:fb_id])
-    respond_with @band    
+  def show_same_genre
+    @bands = Band.find(params[:id])
+    @all = @bands.show_same_genre
+    respond_with @all
   end
 
   # GET /bands/1
