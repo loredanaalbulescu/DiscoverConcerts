@@ -14,9 +14,9 @@ class BandsController < ApplicationController
   end
 
   def show_by_genre
-	logger.info("band_controller.rb genre = " + params[:genre])
-    @bands = Band.find_by_genre(params[:genre])
-    respond_with @bands
+	@bands = Band.find_by_genre(params[:genre])
+	@all = @bands.show_by_genre({:genre => params[:genre]} )
+    respond_with @all
   end
 
   def show_same_genre
