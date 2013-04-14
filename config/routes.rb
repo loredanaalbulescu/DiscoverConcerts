@@ -10,7 +10,7 @@ DiscoverConcerts::Application.routes.draw do
   resources :users
 
   match 'bands/:fb_id/show_by_fb_id', to: 'bands#show_by_fb_id', :via => :get, action: 'show_by_fb_id'
-  match 'bands/:genre/show_by_genre', to: 'bands#show_by_genre', :via => :get, action: 'show_by_genre'
+  match 'bands/:genre_id/show_by_genre_id', to: 'bands#show_by_genre_id', :via => :get, action: 'show_by_genre_id'
   match 'bands/:id/genre/:genre', to: 'bands#show_same_genre', :via => :get, action: 'show_same_genre'
 
 

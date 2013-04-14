@@ -13,9 +13,9 @@ class BandsController < ApplicationController
     respond_with @band
   end
 
-  def show_by_genre
-	@bands = Band.find_by_genre(params[:genre])
-	@all = @bands.show_by_genre({:genre => params[:genre]} )
+  def show_by_genre_id
+	@bands = Band.find_by_genre_id(params[:genre_id])
+	@all = @bands.show_by_genre_id({:genre_id => params[:genre_id]} )
     respond_with @all
   end
 

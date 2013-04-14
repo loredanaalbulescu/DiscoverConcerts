@@ -5,8 +5,8 @@ class Band < ActiveRecord::Base
   has_many :concert, :foreign_key => "band_id"
   belongs_to :genre
 
-  def show_by_genre(options={})
-    Band.where(genre: options[:genre])
+  def show_by_genre_id(options={})
+    Band.where(genre_id: options[:genre_id])
   end
 
   def show_same_genre(options={})
