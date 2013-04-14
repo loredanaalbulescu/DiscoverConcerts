@@ -1,5 +1,8 @@
 DiscoverConcerts::Application.routes.draw do
 
+  resources :genres
+
+
   resources :participates
   resources :favorites
   resources :concerts

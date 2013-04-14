@@ -11,16 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130402182209) do
+ActiveRecord::Schema.define(:version => 20130414114925) do
 
   create_table "bands", :force => true do |t|
     t.string   "fb_id"
     t.string   "name"
-    t.string   "genre"
     t.string   "city"
     t.text     "description"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.integer  "genre_id"
   end
 
   create_table "concerts", :force => true do |t|
@@ -38,6 +38,12 @@ ActiveRecord::Schema.define(:version => 20130402182209) do
   create_table "favorites", :force => true do |t|
     t.integer  "user_id"
     t.integer  "band_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "genres", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
