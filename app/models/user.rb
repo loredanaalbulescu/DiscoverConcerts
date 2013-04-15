@@ -3,4 +3,5 @@ class User < ActiveRecord::Base
 
   has_many :favorite, :foreign_key => "user_id"
   has_many :participare, :foreign_key => "user_id"
+
 end
