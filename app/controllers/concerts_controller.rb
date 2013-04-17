@@ -8,6 +8,12 @@ class ConcertsController < ApplicationController
     respond_with @concerts
   end
 
+  def show_by_band_id
+	@concerts = Band.find_by_band_id(params[:band_id])
+	@all = @concerts.show_by_band_id({:band_id => params[:genre_id]} )
+    respond_with @all
+  end
+
   # GET /concerts/1
   # GET /concerts/1.json
   def show

@@ -13,7 +13,7 @@ DiscoverConcerts::Application.routes.draw do
   match 'bands/:genre_id/show_by_genre_id', to: 'bands#show_by_genre_id', :via => :get, action: 'show_by_genre_id'
   match 'bands/:id/genre/:genre', to: 'bands#show_same_genre', :via => :get, action: 'show_same_genre'
   match 'favorites/:user_id/show_favorites', to: 'favorites#show_favorites', :via => :get, action: 'show_favorites'
-
+  match 'concerts/:band_id/show_by_band_id', to: 'concerts#show_by_band_id', :via => :get, action: 'show_by_band_id' 
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
