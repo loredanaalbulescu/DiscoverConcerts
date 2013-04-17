@@ -9,8 +9,8 @@ class ConcertsController < ApplicationController
   end
 
   def show_by_band_id
-	@concerts = Band.find_by_band_id(params[:band_id])
-	@all = @concerts.show_by_band_id({:band_id => params[:genre_id]} )
+	@concerts = Concert.find_by_band_id(params[:band_id])
+	@all = @concerts.show_by_band_id({:band_id => params[:band_id]} )
     respond_with @all
   end
 
