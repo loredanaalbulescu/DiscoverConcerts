@@ -13,4 +13,8 @@ class Band < ActiveRecord::Base
     #logger.info("band.rb genre = " + options[:genre])
     Band.where(genre: options[:genre]).select(:name)
   end
+
+  def show_favorites(options={})
+	Band.joins('JOIN favorites ON bands.fb_id = favorites.band_id').where('favorites.user_id = ' + options[:user_id])
+  end
 end

@@ -26,10 +26,10 @@ class BandsController < ApplicationController
   end
 
   def show_favorites
-    @favorite  = Favorite.find_by_user_id(params[:user_id])
-    @favorites = @favorite.show_favorites({:user_id => params[:user_id]})
-    logger.info("@favorites = " + @favorites[1]["band_id"]);
-    #respond_with @all
+    @band  = Band.last()
+    @bands = @band.show_favorites({:user_id => params[:user_id]})
+    #logger.info("@favorites = " + @favorites[1]["band_id"]);
+    respond_with @bands
   end
 
   # GET /bands/1
