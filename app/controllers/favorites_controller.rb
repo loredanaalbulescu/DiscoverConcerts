@@ -38,8 +38,11 @@ class FavoritesController < ApplicationController
   # POST /favorites.json
   def create
     @favorite = Favorite.new(params[:favorite])
-    @favorite.save
-    respond_with @favorite 
+    @same = Favorite.find_by_user_id_and_band_id(@favorite.user_id, @favorite.band_id)
+    if @same == nil
+      @favorite.save
+    end    
+	respond_with @favorite 
   end
 
   # PUT /favorites/1
