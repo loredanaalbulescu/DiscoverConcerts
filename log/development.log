@@ -4932,3 +4932,525 @@ Processing by ConcertsController#show_by_band_id as JSON
   [1m[36mConcert Load (0.1ms)[0m  [1mSELECT "concerts".* FROM "concerts" WHERE "concerts"."band_id" = '100001178828821' LIMIT 1[0m
   [1m[35mConcert Load (0.1ms)[0m  SELECT "concerts".* FROM "concerts" WHERE "concerts"."band_id" = '100001178828821'
 Completed 200 OK in 11ms (Views: 1.3ms | ActiveRecord: 0.1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-04-22 18:04:32 +0300
+Served asset /rails.png - 200 OK (46ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-04-22 18:04:35 +0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 526ms (Views: 450.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2013-04-22 18:04:36 +0300
+Served asset /favorites.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/concerts.js?body=1" for 127.0.0.1 at 2013-04-22 18:04:36 +0300
+Served asset /concerts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/concerts.css?body=1" for 127.0.0.1 at 2013-04-22 18:04:36 +0300
+Served asset /concerts.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2013-04-22 18:04:36 +0300
+Served asset /favorites.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bands.css?body=1" for 127.0.0.1 at 2013-04-22 18:04:36 +0300
+Served asset /bands.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/genres.js?body=1" for 127.0.0.1 at 2013-04-22 18:04:36 +0300
+Served asset /genres.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-22 18:04:36 +0300
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/participates.css?body=1" for 127.0.0.1 at 2013-04-22 18:04:36 +0300
+Served asset /participates.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-04-22 18:04:36 +0300
+Served asset /users.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-22 18:04:36 +0300
+Served asset /application.css - 200 OK (11ms)
+
+
+Started GET "/assets/genres.css?body=1" for 127.0.0.1 at 2013-04-22 18:04:36 +0300
+Served asset /genres.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/participates.js?body=1" for 127.0.0.1 at 2013-04-22 18:04:36 +0300
+Served asset /participates.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bands.js?body=1" for 127.0.0.1 at 2013-04-22 18:04:36 +0300
+Served asset /bands.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-22 18:04:36 +0300
+Served asset /users.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-22 18:04:36 +0300
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-22 18:04:36 +0300
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-22 18:04:36 +0300
+Served asset /application.js - 200 OK (13ms)
+
+
+Started DELETE "/users/2" for 127.0.0.1 at 2013-04-22 18:04:43 +0300
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MR0nYQCStFsEoznL7CXKnLLkuts9GhI+r41fTfLUssk=", "id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (26.2ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 2]]
+  [1m[36m (194.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 288ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-04-22 18:04:43 +0300
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 76ms (Views: 74.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bands.css?body=1" for 127.0.0.1 at 2013-04-22 18:04:43 +0300
+Served asset /bands.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2013-04-22 18:04:43 +0300
+Served asset /favorites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/concerts.css?body=1" for 127.0.0.1 at 2013-04-22 18:04:43 +0300
+Served asset /concerts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/participates.css?body=1" for 127.0.0.1 at 2013-04-22 18:04:43 +0300
+Served asset /participates.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/genres.css?body=1" for 127.0.0.1 at 2013-04-22 18:04:43 +0300
+Served asset /genres.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-22 18:04:43 +0300
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bands.js?body=1" for 127.0.0.1 at 2013-04-22 18:04:43 +0300
+Served asset /bands.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/concerts.js?body=1" for 127.0.0.1 at 2013-04-22 18:04:43 +0300
+Served asset /concerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2013-04-22 18:04:43 +0300
+Served asset /favorites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/genres.js?body=1" for 127.0.0.1 at 2013-04-22 18:04:43 +0300
+Served asset /genres.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/participates.js?body=1" for 127.0.0.1 at 2013-04-22 18:04:43 +0300
+Served asset /participates.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-04-22 18:04:47 +0300
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (45.2ms)
+  Rendered users/new.html.erb within layouts/application (64.2ms)
+Completed 200 OK in 179ms (Views: 178.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bands.css?body=1" for 127.0.0.1 at 2013-04-22 18:04:47 +0300
+Served asset /bands.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/concerts.css?body=1" for 127.0.0.1 at 2013-04-22 18:04:47 +0300
+Served asset /concerts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/genres.css?body=1" for 127.0.0.1 at 2013-04-22 18:04:47 +0300
+Served asset /genres.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2013-04-22 18:04:47 +0300
+Served asset /favorites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/participates.css?body=1" for 127.0.0.1 at 2013-04-22 18:04:47 +0300
+Served asset /participates.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-22 18:04:47 +0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bands.js?body=1" for 127.0.0.1 at 2013-04-22 18:04:47 +0300
+Served asset /bands.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/concerts.js?body=1" for 127.0.0.1 at 2013-04-22 18:04:47 +0300
+Served asset /concerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2013-04-22 18:04:47 +0300
+Served asset /favorites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/genres.js?body=1" for 127.0.0.1 at 2013-04-22 18:04:47 +0300
+Served asset /genres.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/participates.js?body=1" for 127.0.0.1 at 2013-04-22 18:04:47 +0300
+Served asset /participates.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-04-22 18:05:16 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MR0nYQCStFsEoznL7CXKnLLkuts9GhI+r41fTfLUssk=", "user"=>{"fb_id"=>"100001807906877", "first_name"=>"Silvia", "last_name"=>"Iovescu", "city"=>"Bucharest"}, "commit"=>"Create User"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."fb_id" = '100001807906877' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (288.3ms)[0m  [1mINSERT INTO "users" ("city", "created_at", "fb_id", "first_name", "last_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["city", "Bucharest"], ["created_at", Mon, 22 Apr 2013 15:05:17 UTC +00:00], ["fb_id", "100001807906877"], ["first_name", "Silvia"], ["last_name", "Iovescu"], ["updated_at", Mon, 22 Apr 2013 15:05:17 UTC +00:00]]
+  [1m[35m (186.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 676ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2013-04-22 18:05:17 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 116ms (Views: 114.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bands.css?body=1" for 127.0.0.1 at 2013-04-22 18:05:17 +0300
+Served asset /bands.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/concerts.css?body=1" for 127.0.0.1 at 2013-04-22 18:05:17 +0300
+Served asset /concerts.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2013-04-22 18:05:17 +0300
+Served asset /favorites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/participates.css?body=1" for 127.0.0.1 at 2013-04-22 18:05:17 +0300
+Served asset /participates.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-22 18:05:17 +0300
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/genres.css?body=1" for 127.0.0.1 at 2013-04-22 18:05:17 +0300
+Served asset /genres.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bands.js?body=1" for 127.0.0.1 at 2013-04-22 18:05:17 +0300
+Served asset /bands.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/concerts.js?body=1" for 127.0.0.1 at 2013-04-22 18:05:17 +0300
+Served asset /concerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2013-04-22 18:05:17 +0300
+Served asset /favorites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/genres.js?body=1" for 127.0.0.1 at 2013-04-22 18:05:17 +0300
+Served asset /genres.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/participates.js?body=1" for 127.0.0.1 at 2013-04-22 18:05:17 +0300
+Served asset /participates.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-04-22 18:05:19 +0300
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 77ms (Views: 76.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bands.css?body=1" for 127.0.0.1 at 2013-04-22 18:05:19 +0300
+Served asset /bands.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2013-04-22 18:05:19 +0300
+Served asset /favorites.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/concerts.css?body=1" for 127.0.0.1 at 2013-04-22 18:05:19 +0300
+Served asset /concerts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/genres.css?body=1" for 127.0.0.1 at 2013-04-22 18:05:19 +0300
+Served asset /genres.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/participates.css?body=1" for 127.0.0.1 at 2013-04-22 18:05:19 +0300
+Served asset /participates.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-22 18:05:20 +0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bands.js?body=1" for 127.0.0.1 at 2013-04-22 18:05:20 +0300
+Served asset /bands.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/concerts.js?body=1" for 127.0.0.1 at 2013-04-22 18:05:20 +0300
+Served asset /concerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2013-04-22 18:05:20 +0300
+Served asset /favorites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/genres.js?body=1" for 127.0.0.1 at 2013-04-22 18:05:20 +0300
+Served asset /genres.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/participates.js?body=1" for 127.0.0.1 at 2013-04-22 18:05:20 +0300
+Served asset /participates.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-04-22 18:52:04 +0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 107ms (Views: 106.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/participates.css?body=1" for 127.0.0.1 at 2013-04-22 18:52:04 +0300
+Served asset /participates.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bands.css?body=1" for 127.0.0.1 at 2013-04-22 18:52:04 +0300
+Served asset /bands.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-22 18:52:04 +0300
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/genres.css?body=1" for 127.0.0.1 at 2013-04-22 18:52:04 +0300
+Served asset /genres.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/concerts.css?body=1" for 127.0.0.1 at 2013-04-22 18:52:04 +0300
+Served asset /concerts.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2013-04-22 18:52:04 +0300
+Served asset /favorites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-22 18:52:04 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bands.js?body=1" for 127.0.0.1 at 2013-04-22 18:52:04 +0300
+Served asset /bands.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/concerts.js?body=1" for 127.0.0.1 at 2013-04-22 18:52:04 +0300
+Served asset /concerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2013-04-22 18:52:04 +0300
+Served asset /favorites.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/genres.js?body=1" for 127.0.0.1 at 2013-04-22 18:52:04 +0300
+Served asset /genres.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/participates.js?body=1" for 127.0.0.1 at 2013-04-22 18:52:04 +0300
+Served asset /participates.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-04-22 18:52:13 +0300
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 81ms (Views: 79.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bands.css?body=1" for 127.0.0.1 at 2013-04-22 18:52:13 +0300
+Served asset /bands.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/participates.css?body=1" for 127.0.0.1 at 2013-04-22 18:52:13 +0300
+Served asset /participates.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/concerts.css?body=1" for 127.0.0.1 at 2013-04-22 18:52:13 +0300
+Served asset /concerts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2013-04-22 18:52:13 +0300
+Served asset /favorites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/genres.css?body=1" for 127.0.0.1 at 2013-04-22 18:52:13 +0300
+Served asset /genres.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-22 18:52:13 +0300
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-22 18:52:13 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bands.js?body=1" for 127.0.0.1 at 2013-04-22 18:52:13 +0300
+Served asset /bands.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/concerts.js?body=1" for 127.0.0.1 at 2013-04-22 18:52:13 +0300
+Served asset /concerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2013-04-22 18:52:13 +0300
+Served asset /favorites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/genres.js?body=1" for 127.0.0.1 at 2013-04-22 18:52:13 +0300
+Served asset /genres.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/participates.js?body=1" for 127.0.0.1 at 2013-04-22 18:52:13 +0300
+Served asset /participates.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-04-22 18:52:16 +0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 91ms (Views: 90.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bands.css?body=1" for 127.0.0.1 at 2013-04-22 18:52:16 +0300
+Served asset /bands.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2013-04-22 18:52:16 +0300
+Served asset /favorites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/genres.css?body=1" for 127.0.0.1 at 2013-04-22 18:52:16 +0300
+Served asset /genres.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-22 18:52:16 +0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/concerts.css?body=1" for 127.0.0.1 at 2013-04-22 18:52:16 +0300
+Served asset /concerts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/participates.css?body=1" for 127.0.0.1 at 2013-04-22 18:52:16 +0300
+Served asset /participates.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-22 18:52:16 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bands.js?body=1" for 127.0.0.1 at 2013-04-22 18:52:16 +0300
+Served asset /bands.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/concerts.js?body=1" for 127.0.0.1 at 2013-04-22 18:52:16 +0300
+Served asset /concerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2013-04-22 18:52:16 +0300
+Served asset /favorites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/genres.js?body=1" for 127.0.0.1 at 2013-04-22 18:52:16 +0300
+Served asset /genres.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/participates.js?body=1" for 127.0.0.1 at 2013-04-22 18:52:16 +0300
+Served asset /participates.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-04-22 18:52:24 +0300
+Served asset /rails.png - 200 OK (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130402181002)
+Migrating to CreateBands (20130402181105)
+Migrating to CreateConcerts (20130402181359)
+Migrating to CreateFavorites (20130402181834)
+Migrating to CreateParticipates (20130402181906)
+Migrating to AddBandIdToConcerts (20130402182209)
+Migrating to CreateGenres (20130414114624)
+Migrating to RemoveGenreFromBands (20130414114818)
+Migrating to AddGenreIdToBands (20130414114925)
+Migrating to ChangeBandIdTypeInFavorites (20130415191322)
+Migrating to ChangeUserIdTypeInFavorites (20130415191629)
+Migrating to ChangeBandIdTypeInConcerts (20130417094347)
+Migrating to ChangeUserIdTypeInParticipates (20130422181139)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130402181002)
+Migrating to CreateBands (20130402181105)
+Migrating to CreateConcerts (20130402181359)
+Migrating to CreateFavorites (20130402181834)
+Migrating to CreateParticipates (20130402181906)
+Migrating to AddBandIdToConcerts (20130402182209)
+Migrating to CreateGenres (20130414114624)
+Migrating to RemoveGenreFromBands (20130414114818)
+Migrating to AddGenreIdToBands (20130414114925)
+Migrating to ChangeBandIdTypeInFavorites (20130415191322)
+Migrating to ChangeUserIdTypeInFavorites (20130415191629)
+Migrating to ChangeBandIdTypeInConcerts (20130417094347)
+Migrating to ChangeUserIdTypeInParticipates (20130422181139)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TEMPORARY TABLE "altered_participates" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "concert_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "participates"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "participates"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "participates" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" varchar(255), "concert_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_participates"
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "altered_participates"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130422181139')
+  [1m[36m (190.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 

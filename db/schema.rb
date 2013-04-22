@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130417094347) do
+ActiveRecord::Schema.define(:version => 20130422181139) do
 
   create_table "bands", :force => true do |t|
     t.string   "fb_id"
@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(:version => 20130417094347) do
   end
 
   create_table "participates", :force => true do |t|
-    t.integer  "user_id"
+    t.string   "user_id"
     t.integer  "concert_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
