@@ -8,7 +8,7 @@ class Concert < ActiveRecord::Base
     Concert.where(band_id: options[:band_id])
   end
 
-  def show_pariticipates(options={})
-	Concert.joins('JOIN participates ON concert.id = participates.concert_id').where('participates.user_id = \'' + options[:user_id]+'\'')
+  def show_participates(options={})
+	Concert.joins('JOIN participates ON concerts.id = participates.concert_id').where('participates.user_id = \'' + options[:user_id]+'\'')
   end
 end
