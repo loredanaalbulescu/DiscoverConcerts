@@ -16,7 +16,7 @@ class ConcertsController < ApplicationController
 
   def show_participates
     @concert  = Concert.last()
-    @concerts = @concert.show_pariticipates({:user_id => params[:user_id]})
+    @concerts = @concert.show_participates({:user_id => params[:user_id]})
     respond_with @concerts
   end
 
