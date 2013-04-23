@@ -15,6 +15,6 @@ class Band < ActiveRecord::Base
   end
 
   def show_favorites(options={})
-	Band.joins('JOIN favorites ON bands.fb_id = favorites.band_id').where('favorites.user_id = "' + options[:user_id]+'"')
+	Band.joins('JOIN favorites ON bands.fb_id = favorites.band_id').where('favorites.user_id = \'' + options[:user_id]+'\'')
   end
 end
