@@ -8579,3 +8579,16 @@ Served asset /application.js - 304 Not Modified (2ms)
 
 Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-22 22:28:44 +0300
 Served asset /users.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-04-23 08:19:48 +0300
+Served asset /rails.png - 200 OK (36ms)
+
+
+Started GET "/bands/100001178828821/show_favorites.json" for 127.0.0.1 at 2013-04-23 08:19:52 +0300
+Processing by BandsController#show_favorites as JSON
+  Parameters: {"user_id"=>"100001178828821"}
+  [1m[36mBand Load (13.2ms)[0m  [1mSELECT "bands".* FROM "bands" ORDER BY "bands"."id" DESC LIMIT 1[0m
+  [1m[35mBand Load (4.2ms)[0m  SELECT "bands".* FROM "bands" JOIN favorites ON bands.fb_id = favorites.band_id WHERE (favorites.user_id = "100001178828821")
+Completed 200 OK in 173ms (Views: 41.9ms | ActiveRecord: 4.2ms)
