@@ -14,6 +14,12 @@ class ConcertsController < ApplicationController
     respond_with @all
   end
 
+  def show_participates
+    @concert  = Concert.last()
+    @concerts = @concert.show_pariticipates({:user_id => params[:user_id]})
+    respond_with @concerts
+  end
+
   # GET /concerts/1
   # GET /concerts/1.json
   def show
