@@ -16,6 +16,8 @@ DiscoverConcerts::Application.routes.draw do
   match 'favorites/:user_id/show_favorites', to: 'favorites#show_favorites', :via => :get, action: 'show_favorites'
   match 'concerts/:band_id/show_by_band_id', to: 'concerts#show_by_band_id', :via => :get, action: 'show_by_band_id'
   match 'concerts/:user_id/show_participates', to: 'concerts#show_participates', :via => :get, action: 'show_participates' 
+  match 'concerts/:user_id/show_participates_past', to: 'concerts#show_participates_past', :via => :get, action: 'show_participates_past' 
+  match 'concerts/:user_id/show_participates_future', to: 'concerts#show_participates_future', :via => :get, action: 'show_participates_future'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

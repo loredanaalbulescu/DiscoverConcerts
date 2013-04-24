@@ -20,6 +20,18 @@ class ConcertsController < ApplicationController
     respond_with @concerts
   end
 
+  def show_participates_past
+    @concert  = Concert.last()
+    @concerts = @concert.show_participates_past({:user_id => params[:user_id]})
+    respond_with @concerts
+  end
+
+  def show_participates_future
+    @concert  = Concert.last()
+    @concerts = @concert.show_participates_future({:user_id => params[:user_id]})
+    respond_with @concerts
+  end
+
   # GET /concerts/1
   # GET /concerts/1.json
   def show

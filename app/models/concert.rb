@@ -11,4 +11,12 @@ class Concert < ActiveRecord::Base
   def show_participates(options={})
 	Concert.joins('JOIN participates ON concerts.id = participates.concert_id').where('participates.user_id = \'' + options[:user_id]+'\'')
   end
+
+  def show_participates_past(options={})
+	Concert.joins('JOIN participates ON concerts.id = participates.concert_id').where('participates.user_id = \'' + options[:user_id]+'\' and concerts.date_time < \''+Date.today.to_s+'\'')
+  end
+
+  def show_participates_future(options={})
+	Concert.joins('JOIN participates ON concerts.id = participates.concert_id').where('participates.user_id = \'' + options[:user_id]+'\' and concerts.date_time >= \''+Date.today.to_s+'\'')
+  end
 end
