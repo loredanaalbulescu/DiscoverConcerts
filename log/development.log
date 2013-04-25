@@ -10549,3 +10549,421 @@ Processing by ConcertsController#show_participates_future as JSON
   [1m[35mConcert Load (0.1ms)[0m  SELECT "concerts".* FROM "concerts" ORDER BY "concerts"."id" DESC LIMIT 1
   [1m[36mConcert Load (0.2ms)[0m  [1mSELECT "concerts".* FROM "concerts" JOIN participates ON concerts.id = participates.concert_id WHERE (participates.user_id = '100001178828821' and concerts.date_time >= '2013-04-24')[0m
 Completed 200 OK in 11ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-04-25 16:19:42 +0300
+Served asset /rails.png - 200 OK (29ms)
+
+
+Started GET "/favorites" for 127.0.0.1 at 2013-04-25 16:19:44 +0300
+Processing by FavoritesController#index as HTML
+  [1m[36mFavorite Load (9.0ms)[0m  [1mSELECT "favorites".* FROM "favorites" [0m
+  Rendered favorites/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 950ms (Views: 897.1ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-25 16:19:45 +0300
+Served asset /application.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2013-04-25 16:19:45 +0300
+Served asset /favorites.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/genres.css?body=1" for 127.0.0.1 at 2013-04-25 16:19:45 +0300
+Served asset /genres.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/concerts.css?body=1" for 127.0.0.1 at 2013-04-25 16:19:45 +0300
+Served asset /concerts.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bands.css?body=1" for 127.0.0.1 at 2013-04-25 16:19:45 +0300
+Served asset /bands.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-25 16:19:45 +0300
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-04-25 16:19:45 +0300
+Served asset /users.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/participates.css?body=1" for 127.0.0.1 at 2013-04-25 16:19:45 +0300
+Served asset /participates.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-25 16:19:45 +0300
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-25 16:19:45 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/genres.js?body=1" for 127.0.0.1 at 2013-04-25 16:19:45 +0300
+Served asset /genres.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/participates.js?body=1" for 127.0.0.1 at 2013-04-25 16:19:45 +0300
+Served asset /participates.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-25 16:19:45 +0300
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-25 16:19:45 +0300
+Served asset /application.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/bands.js?body=1" for 127.0.0.1 at 2013-04-25 16:19:45 +0300
+Served asset /bands.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/concerts.js?body=1" for 127.0.0.1 at 2013-04-25 16:19:45 +0300
+Served asset /concerts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2013-04-25 16:19:45 +0300
+Served asset /favorites.js - 304 Not Modified (2ms)
+
+
+Started GET "/favorites.json" for 127.0.0.1 at 2013-04-25 16:19:49 +0300
+Processing by FavoritesController#index as JSON
+  [1m[35mFavorite Load (0.2ms)[0m  SELECT "favorites".* FROM "favorites" 
+Completed 200 OK in 158ms (Views: 107.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favorites" for 127.0.0.1 at 2013-04-25 16:19:55 +0300
+Processing by FavoritesController#index as HTML
+  [1m[36mFavorite Load (0.1ms)[0m  [1mSELECT "favorites".* FROM "favorites" [0m
+  Rendered favorites/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 83ms (Views: 82.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-25 16:19:55 +0300
+Served asset /application.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/bands.css?body=1" for 127.0.0.1 at 2013-04-25 16:19:55 +0300
+Served asset /bands.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/concerts.css?body=1" for 127.0.0.1 at 2013-04-25 16:19:55 +0300
+Served asset /concerts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/genres.css?body=1" for 127.0.0.1 at 2013-04-25 16:19:55 +0300
+Served asset /genres.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2013-04-25 16:19:55 +0300
+Served asset /favorites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/participates.css?body=1" for 127.0.0.1 at 2013-04-25 16:19:55 +0300
+Served asset /participates.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-25 16:19:55 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-04-25 16:19:55 +0300
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-25 16:19:55 +0300
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-25 16:19:55 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bands.js?body=1" for 127.0.0.1 at 2013-04-25 16:19:55 +0300
+Served asset /bands.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/concerts.js?body=1" for 127.0.0.1 at 2013-04-25 16:19:55 +0300
+Served asset /concerts.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2013-04-25 16:19:55 +0300
+Served asset /favorites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/genres.js?body=1" for 127.0.0.1 at 2013-04-25 16:19:55 +0300
+Served asset /genres.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/participates.js?body=1" for 127.0.0.1 at 2013-04-25 16:19:55 +0300
+Served asset /participates.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-25 16:19:55 +0300
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-25 16:19:55 +0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/favorites/new" for 127.0.0.1 at 2013-04-25 16:20:00 +0300
+Processing by FavoritesController#new as HTML
+  Rendered favorites/_form.html.erb (44.7ms)
+  Rendered favorites/new.html.erb within layouts/application (65.8ms)
+Completed 200 OK in 140ms (Views: 139.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-25 16:20:00 +0300
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/genres.css?body=1" for 127.0.0.1 at 2013-04-25 16:20:00 +0300
+Served asset /genres.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bands.css?body=1" for 127.0.0.1 at 2013-04-25 16:20:00 +0300
+Served asset /bands.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/concerts.css?body=1" for 127.0.0.1 at 2013-04-25 16:20:00 +0300
+Served asset /concerts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2013-04-25 16:20:00 +0300
+Served asset /favorites.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/participates.css?body=1" for 127.0.0.1 at 2013-04-25 16:20:00 +0300
+Served asset /participates.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-25 16:20:00 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-04-25 16:20:00 +0300
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:00 +0300
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:00 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bands.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:00 +0300
+Served asset /bands.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/concerts.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:00 +0300
+Served asset /concerts.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/genres.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:00 +0300
+Served asset /genres.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:00 +0300
+Served asset /favorites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/participates.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:00 +0300
+Served asset /participates.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:00 +0300
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:00 +0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/favorites" for 127.0.0.1 at 2013-04-25 16:20:05 +0300
+Processing by FavoritesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MR0nYQCStFsEoznL7CXKnLLkuts9GhI+r41fTfLUssk=", "favorite"=>{"user_id"=>"100001178828821", "band_id"=>"100001178828821"}, "commit"=>"Create Favorite"}
+  [1m[35mFavorite Load (0.4ms)[0m  SELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = '100001178828821' AND "favorites"."band_id" = '100001178828821' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (36.7ms)[0m  INSERT INTO "favorites" ("band_id", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["band_id", "100001178828821"], ["created_at", Thu, 25 Apr 2013 13:20:05 UTC +00:00], ["updated_at", Thu, 25 Apr 2013 13:20:05 UTC +00:00], ["user_id", "100001178828821"]]
+  [1m[36m (193.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/favorites/6
+Completed 302 Found in 312ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/favorites/6" for 127.0.0.1 at 2013-04-25 16:20:05 +0300
+Processing by FavoritesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mFavorite Load (0.2ms)[0m  SELECT "favorites".* FROM "favorites" WHERE "favorites"."id" = ? LIMIT 1  [["id", "6"]]
+  Rendered favorites/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 78ms (Views: 76.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-25 16:20:05 +0300
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/concerts.css?body=1" for 127.0.0.1 at 2013-04-25 16:20:05 +0300
+Served asset /concerts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bands.css?body=1" for 127.0.0.1 at 2013-04-25 16:20:05 +0300
+Served asset /bands.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2013-04-25 16:20:05 +0300
+Served asset /favorites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/participates.css?body=1" for 127.0.0.1 at 2013-04-25 16:20:05 +0300
+Served asset /participates.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/genres.css?body=1" for 127.0.0.1 at 2013-04-25 16:20:05 +0300
+Served asset /genres.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-25 16:20:05 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-04-25 16:20:05 +0300
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:05 +0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:05 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bands.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:05 +0300
+Served asset /bands.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/concerts.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:05 +0300
+Served asset /concerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:05 +0300
+Served asset /favorites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/genres.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:05 +0300
+Served asset /genres.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/participates.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:05 +0300
+Served asset /participates.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:05 +0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:05 +0300
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/favorites/6/destroy" for 127.0.0.1 at 2013-04-25 16:20:18 +0300
+Processing by FavoritesController#destroy as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mFavorite Load (0.1ms)[0m  [1mSELECT "favorites".* FROM "favorites" WHERE "favorites"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "favorites" WHERE "favorites"."id" = ?[0m  [["id", 6]]
+  [1m[35m (357.0ms)[0m  commit transaction
+Completed 500 Internal Server Error in 361ms
+
+ActionView::MissingTemplate (Missing template favorites/destroy, application/destroy with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/home/ada/Documents/facultate/an3/sem2/iOS/DiscoverConcerts/app/views"
+):
+  app/controllers/favorites_controller.rb:61:in `destroy'
+
+
+  Rendered /home/ada/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.3ms)
+
+
+Started GET "/favorites" for 127.0.0.1 at 2013-04-25 16:20:37 +0300
+Processing by FavoritesController#index as HTML
+  [1m[36mFavorite Load (0.1ms)[0m  [1mSELECT "favorites".* FROM "favorites" [0m
+  Rendered favorites/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 92ms (Views: 91.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-25 16:20:37 +0300
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/genres.css?body=1" for 127.0.0.1 at 2013-04-25 16:20:37 +0300
+Served asset /genres.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bands.css?body=1" for 127.0.0.1 at 2013-04-25 16:20:37 +0300
+Served asset /bands.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/participates.css?body=1" for 127.0.0.1 at 2013-04-25 16:20:37 +0300
+Served asset /participates.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favorites.css?body=1" for 127.0.0.1 at 2013-04-25 16:20:37 +0300
+Served asset /favorites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/concerts.css?body=1" for 127.0.0.1 at 2013-04-25 16:20:37 +0300
+Served asset /concerts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-25 16:20:37 +0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-04-25 16:20:37 +0300
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bands.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:37 +0300
+Served asset /bands.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:37 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:37 +0300
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/favorites.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:38 +0300
+Served asset /favorites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/concerts.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:38 +0300
+Served asset /concerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/genres.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:38 +0300
+Served asset /genres.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/participates.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:38 +0300
+Served asset /participates.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:38 +0300
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-25 16:20:38 +0300
+Served asset /application.js - 304 Not Modified (2ms)
