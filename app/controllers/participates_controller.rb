@@ -8,13 +8,11 @@ class ParticipatesController < ApplicationController
 	respond_with @participates
   end
 
-
  def show_by_concert_id
 	@participates = Participate.find_by_concert_id(params[:concert_id])
 	@all = @participates.show_by_concert_id({:concert_id => params[:concert_id]} )
     respond_with @all
   end
-
 
   # GET /participates/1
   # GET /participates/1.json
