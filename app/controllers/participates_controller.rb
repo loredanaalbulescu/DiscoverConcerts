@@ -38,8 +38,11 @@ class ParticipatesController < ApplicationController
   # POST /participates.json
   def create
     @participate = Participate.new(params[:participate])
-    @participate.save
-	respond_with @participate
+    @same_fb_id = Participate.find_by_fb_id(@user.fb_id)
+    if @same_fb_id == nil
+      @participate.save
+    end
+    respond_with @participate
   end
 
   # PUT /participates/1
