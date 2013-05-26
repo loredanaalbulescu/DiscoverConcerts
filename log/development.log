@@ -11165,3 +11165,118 @@ ActionController::RoutingError (No route matches [GET] "/participates/1/show_by_
 
 
   Rendered /Users/Loredana/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (39.2ms)
+
+
+Started GET "/participates/1/show_by_concert_id" for 127.0.0.1 at 2013-05-26 13:46:15 +0300
+Processing by ParticipatesController#show_by_concert_id as HTML
+  Parameters: {"concert_id"=>"1"}
+  [1m[36mParticipate Load (22.6ms)[0m  [1mSELECT "participates".* FROM "participates" WHERE "participates"."concert_id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 154ms
+
+ActionView::MissingTemplate (Missing template participates/show_by_concert_id, application/show_by_concert_id with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/Loredana/Desktop/rails_apps/DiscoverConcerts/app/views"
+):
+  app/controllers/participates_controller.rb:14:in `show_by_concert_id'
+
+
+  Rendered /Users/Loredana/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/participates/1/show_by_concert_id" for 127.0.0.1 at 2013-05-26 13:54:36 +0300
+Processing by ParticipatesController#show_by_concert_id as HTML
+  Parameters: {"concert_id"=>"1"}
+  [1m[35mParticipate Load (0.2ms)[0m  SELECT "participates".* FROM "participates" WHERE "participates"."concert_id" = 1 LIMIT 1
+Completed 500 Internal Server Error in 3ms
+
+ActionView::MissingTemplate (Missing template participates/show_by_concert_id, application/show_by_concert_id with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/Loredana/Desktop/rails_apps/DiscoverConcerts/app/views"
+):
+  app/controllers/participates_controller.rb:14:in `show_by_concert_id'
+
+
+  Rendered /Users/Loredana/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.8ms)
+
+
+Started GET "/bands.json" for 127.0.0.1 at 2013-05-26 14:01:14 +0300
+Processing by BandsController#index as JSON
+  [1m[36mBand Load (8.6ms)[0m  [1mSELECT "bands".* FROM "bands" [0m
+Completed 200 OK in 67ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favorites" for 127.0.0.1 at 2013-05-26 14:01:28 +0300
+Processing by FavoritesController#index as HTML
+  [1m[35mFavorite Load (23.4ms)[0m  SELECT "favorites".* FROM "favorites" 
+  Rendered favorites/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 555ms (Views: 519.2ms | ActiveRecord: 23.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-26 14:01:29 +0300
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/favorites/new" for 127.0.0.1 at 2013-05-26 14:01:32 +0300
+Processing by FavoritesController#new as HTML
+  Rendered favorites/_form.html.erb (118.6ms)
+  Rendered favorites/new.html.erb within layouts/application (175.8ms)
+Completed 200 OK in 323ms (Views: 322.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favorites" for 127.0.0.1 at 2013-05-26 14:01:35 +0300
+Processing by FavoritesController#index as HTML
+  [1m[36mFavorite Load (0.2ms)[0m  [1mSELECT "favorites".* FROM "favorites" [0m
+  Rendered favorites/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 297ms (Views: 295.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-05-26 14:01:58 +0300
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (18.6ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 195ms (Views: 164.3ms | ActiveRecord: 18.9ms)
+
+
+Started GET "/favorites/new" for 127.0.0.1 at 2013-05-26 14:02:08 +0300
+Processing by FavoritesController#new as HTML
+  Rendered favorites/_form.html.erb (3.4ms)
+  Rendered favorites/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 214ms (Views: 213.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bands.json" for 127.0.0.1 at 2013-05-26 14:02:14 +0300
+Processing by BandsController#index as JSON
+  [1m[36mBand Load (0.3ms)[0m  [1mSELECT "bands".* FROM "bands" [0m
+Completed 200 OK in 7ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/favorites" for 127.0.0.1 at 2013-05-26 14:02:21 +0300
+Processing by FavoritesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x+9pop0VNybcS3DkiJu70YWJMBFyJDsA9XRrt/zXkjo=", "favorite"=>{"user_id"=>"689947685", "band_id"=>"111209875980"}, "commit"=>"Create Favorite"}
+  [1m[35mFavorite Load (0.2ms)[0m  SELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = '689947685' AND "favorites"."band_id" = '111209875980' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (64.3ms)[0m  INSERT INTO "favorites" ("band_id", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["band_id", "111209875980"], ["created_at", Sun, 26 May 2013 11:02:21 UTC +00:00], ["updated_at", Sun, 26 May 2013 11:02:21 UTC +00:00], ["user_id", "689947685"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/favorites/7
+Completed 302 Found in 200ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/favorites/7" for 127.0.0.1 at 2013-05-26 14:02:21 +0300
+Processing by FavoritesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mFavorite Load (0.2ms)[0m  SELECT "favorites".* FROM "favorites" WHERE "favorites"."id" = ? LIMIT 1  [["id", "7"]]
+  Rendered favorites/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 174ms (Views: 172.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/favorites/111209875980/show_favorites_of_band_id" for 127.0.0.1 at 2013-05-26 14:05:23 +0300
+Processing by FavoritesController#show_favorites_of_band_id as HTML
+  Parameters: {"band_id"=>"111209875980"}
+  [1m[36mFavorite Load (0.1ms)[0m  [1mSELECT "favorites".* FROM "favorites" WHERE "favorites"."band_id" = '111209875980' LIMIT 1[0m
+Completed 500 Internal Server Error in 11ms
+
+ActionView::MissingTemplate (Missing template favorites/show_favorites_of_band_id, application/show_favorites_of_band_id with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/Loredana/Desktop/rails_apps/DiscoverConcerts/app/views"
+):
+  app/controllers/favorites_controller.rb:20:in `show_favorites_of_band_id'
+
+
+  Rendered /Users/Loredana/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.8ms)

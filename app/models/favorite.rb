@@ -7,4 +7,8 @@ class Favorite < ActiveRecord::Base
   def show_favorites(options={})
     Favorite.where(user_id: options[:user_id])
   end
+  
+  def show_favorites_of_band_id(options={})
+    Favorite.where(band_id: options[:band_id])
+  end
 end
